@@ -28,31 +28,28 @@
   </developers>
 
   <properties>
-    <gwtVersion>2.6.0-rc3</gwtVersion>
+    <gwtVersion>2.7.0</gwtVersion>
   </properties>
   
-  
-  <distributionManagement>
-    <repository>
-      <id>bedatadriven-oss</id>
-      <name>bedatadriven Open-Source releases</name>
-      <url>http://nexus.bedatadriven.com/content/repositories/oss-releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>bedatadriven-snapshots</id>
-      <name>bedatadriven Open-Source snapshots</name>
-      <url>http://nexus.bedatadriven.com/content/repositories/oss-snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
+  <!--<distributionManagement>-->
+    <!--<repository>-->
+      <!--<id>bedatadriven-oss</id>-->
+      <!--<name>bedatadriven Open-Source releases</name>-->
+      <!--<url>http://nexus.bedatadriven.com/content/repositories/oss-releases</url>-->
+    <!--</repository>-->
+    <!--<snapshotRepository>-->
+      <!--<id>bedatadriven-snapshots</id>-->
+      <!--<name>bedatadriven Open-Source snapshots</name>-->
+      <!--<url>http://nexus.bedatadriven.com/content/repositories/oss-snapshots</url>-->
+    <!--</snapshotRepository>-->
+  <!--</distributionManagement>-->
 
-  <scm>
-    <connection>scm:git:git@github.com:bedatadriven/gxt.git</connection>
-    <url>scm:git:git@github.com:bedatadriven/gxt.git</url>
-    <developerConnection>scm:git:git@github.com:bedatadriven/gxt.git</developerConnection>
-    <tag>HEAD</tag>
-  </scm>
-
-
+  <!--<scm>-->
+    <!--<connection>scm:git:git@github.com:bedatadriven/gxt.git</connection>-->
+    <!--<url>scm:git:git@github.com:bedatadriven/gxt.git</url>-->
+    <!--<developerConnection>scm:git:git@github.com:bedatadriven/gxt.git</developerConnection>-->
+    <!--<tag>HEAD</tag>-->
+  <!--</scm>-->
 
   <dependencies>
     <dependency>
@@ -75,10 +72,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.0.2</version>
+        <version>2.3.2</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
           <encoding>UTF-8</encoding>
           <excludes>
             <exclude>**/emul/**/*.java</exclude>
